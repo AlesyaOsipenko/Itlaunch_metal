@@ -46,6 +46,7 @@
     box-shadow: inset 7.53333px -7.53333px 7.53333px rgba(149, 149, 149, 0.1), inset -7.53333px 7.53333px 7.53333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15.0667px);
     border-radius: 10px;
+    border: none;
 }
 
 .btn:hover {
@@ -189,6 +190,7 @@
 
 /* feedback */
 
+
 .feedback .container {
     padding: 0 20px;
     margin: 0 auto;
@@ -234,4 +236,56 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.feedbackForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.formShape {
+    width: 936px;
+    border: 2px solid #959595;
+    box-sizing: border-box;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
+    border-radius: 10px; 
+}
+
+.formTitle {
+    font-family: 'conthraxsemibold';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #959595;
+    padding: 5px 2px 0px 2px;
+    margin-bottom: 60px;
+}
+
+.formLabel {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.formBox {
+    margin: 120px 0px 80px 0;
+    padding: 0 60px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
 }

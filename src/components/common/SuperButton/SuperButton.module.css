@@ -1,0 +1,27 @@
+.SuperButton {
+    background: #C4C4C4;
+    border-radius: 10px;
+    box-shadow: inset 9.33333px -9.33333px 9.33333px rgba(149, 149, 149, 0.1), inset -9.33333px 9.33333px 9.33333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.6667px);
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    border: 0;
+    width: 236px;
+    padding: 5px 0px;
+}
+
+.SuperButton:hover {
+    background: linear-gradient(90deg, #13235A 25%, rgba(67, 73, 95, 0.2) 100%);
+    box-shadow: inset 9.33333px -9.33333px 9.33333px rgba(149, 149, 149, 0.1), inset -9.33333px 9.33333px 9.33333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.6667px);
+    border-radius: 3px;
+    transition: .2s;
+    color: #FFFFFF;
+    cursor: pointer;
+}
