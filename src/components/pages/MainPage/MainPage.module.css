@@ -1,0 +1,237 @@
+.mainTop {
+    background-image: url("./../../../images/MainPage/e6ccc76ed363d0793e734c254ea3f9e6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 860px; 
+}
+
+.mainTopContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 274px 0 205px 0;
+}
+
+.titleWrap {
+    max-width: 985px;
+    margin-bottom: 55px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #ffffff;
+    font-family: "conthraxsemibold";
+    text-transform: uppercase;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    height: 50px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.83);
+    box-shadow: inset 7.53333px -7.53333px 7.53333px rgba(149, 149, 149, 0.1), inset -7.53333px 7.53333px 7.53333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15.0667px);
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: rgba(149, 149, 149, 0.1);
+    box-shadow: inset 1.96667px -1.96667px 1.96667px rgba(119, 119, 119, 0.4), inset 3.93333px -3.93333px 3.93333px rgba(255, 255, 255, 0.4), inset -1.96667px 1.96667px 1.96667px rgba(255, 255, 255, 0.4), inset -3.93333px 3.93333px 3.93333px rgba(119, 119, 119, 0.4);
+    backdrop-filter: blur(19.6667px);
+    cursor: pointer;
+}
+
+/* aboutUs */
+
+.aboutUs {
+    padding: 55px 0 45px 0;
+}
+
+.aboutUs .container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.aboutTitle {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 48px;
+    /* line-height: 58px; */
+    padding-bottom: 40px;
+    border-bottom: 2px solid #666666;
+}
+
+.aboutUs .wrapper {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 32px;
+}
+
+.aboutUsLogo {
+    padding-top: 40px;
+}
+
+.aboutInner {
+    display: flex;
+    gap: 38px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    color:  #FFFFFF;
+}
+
+.aboutTextLeft {
+    max-width: 326px;
+}
+
+.aboutTextRight {
+    max-width: 399px;
+}
+
+.wrapperRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 571px;
+    position: relative;
+}
+
+.wrapperRight::before {
+    content:"";
+    position: absolute;
+    background-image: url("./../../../images/MainPage/pseudoLine.svg");
+    top: 20px;
+    left: -45px;
+    width: 2px;
+    height: 422px;
+}
+
+.wrapperRightImg {
+    width: 100%;
+    object-fit: cover;
+    padding-top: 40px;
+}
+
+/* services */
+
+.services {
+    padding: 15px 0 45px 0;
+}
+
+.services .container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.servicesTitle {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0px 80px 34px 0px;
+}
+
+.servicesTitleWrap {
+    padding-left: 140px;
+}
+
+.services .wrapper {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+.services .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.services .itemLogo {
+    object-fit: cover;
+    margin-bottom: 15px;
+    height: 195px;
+    width: 222px;
+}
+.services .itemName {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* feedback */
+
+.feedback .container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.feedbackTitle {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0px 80px 34px 0px;
+}
+
+.feedback .wrapper {
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.feedback .itemName {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
