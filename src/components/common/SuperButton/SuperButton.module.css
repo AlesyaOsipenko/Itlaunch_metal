@@ -25,3 +25,10 @@
     color: #FFFFFF;
     cursor: pointer;
 }
+
+
+.SuperButton:active {
+    background: rgba(0, 0, 0, 0.12);
+    box-shadow: inset 9.33333px -9.33333px 9.33333px rgba(149, 149, 149, 0.1), inset -9.33333px 9.33333px 9.33333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.6667px);
+}

@@ -2,17 +2,17 @@
 import './App.css';
 import Header from './components/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
-import logo from './images/logo.svg';
+import ServicesPage from './components/pages/ServicesPage/ServicesPage';
+import logo from './images/MainPage/logo.svg';
 
 
 const App = () => {
   return (
     <>
     <div className="app_wrapper">
-      <div className= "logo" >
         <img className="logoImg" src={logo} alt="logo" />
-      </div>
-          <MainPage></MainPage>
+          {/* <MainPage></MainPage> */}
+          <ServicesPage></ServicesPage>
     </div>
     </>
   )

@@ -5,6 +5,7 @@
 
 .logoImg {
   position: absolute;
+  left: 25px;
 }
 
 ::-webkit-scrollbar {

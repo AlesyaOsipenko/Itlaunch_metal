@@ -4,7 +4,7 @@ const ServicesItem = (props) => {
     return (
         <div className={s.item}>
             <img className={s.itemLogo} src={props.image} alt="" />
-            <span className={s.itemName}>{props.text}</span>
+            <a className={s.itemName} href="/">{props.text}</a>
         </div>
     )
   }

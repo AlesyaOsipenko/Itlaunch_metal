@@ -1,0 +1,17 @@
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FFFFFF;
+    font-family: 'conthraxsemibold';
+    padding-left: 55px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #666666;
+}
+
+.container {
+    padding: 0px 20px;
+}
+

@@ -1,0 +1,53 @@
+.servicesItem {
+    display: flex;
+    gap: 233px;
+    border-bottom: 2px solid #666666;
+}
+.servicesItem .container {
+    padding: 50px 105px;
+    display: flex;
+    gap: 230px;
+}
+
+.servicesItem .img {
+    width: 296px;
+    height: 262px;
+    background-color: #ffffff;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.textBoxTitle {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.textBoxDescOne, .textBoxDescTwo, 
+.textBoxDescThree, .textBoxDescFour,
+.textBoxDescFive, .textBoxDescSix {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 40px;
+}
+
+.textBoxDescOneItem {
+    
+}
+
+.textBoxDescOne {
+    gap: 20px;
+}

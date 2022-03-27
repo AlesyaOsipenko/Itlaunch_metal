@@ -39,20 +39,21 @@
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    padding: 0 10px;
-    height: 50px;
+    padding: 0 50px;
+    height: 69px;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.83);
     box-shadow: inset 7.53333px -7.53333px 7.53333px rgba(149, 149, 149, 0.1), inset -7.53333px 7.53333px 7.53333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15.0667px);
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
 }
 
 .btn:hover {
-    background: rgba(149, 149, 149, 0.1);
-    box-shadow: inset 1.96667px -1.96667px 1.96667px rgba(119, 119, 119, 0.4), inset 3.93333px -3.93333px 3.93333px rgba(255, 255, 255, 0.4), inset -1.96667px 1.96667px 1.96667px rgba(255, 255, 255, 0.4), inset -3.93333px 3.93333px 3.93333px rgba(119, 119, 119, 0.4);
-    backdrop-filter: blur(19.6667px);
+    background: #C4C4C4;
+    box-shadow: inset 15.9px -15.9px 15.9px rgba(149, 149, 149, 0.1), inset -15.9px 15.9px 15.9px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(31.8px);
+    transition: .7s ;
     cursor: pointer;
 }
 
@@ -76,7 +77,7 @@
     font-weight: 600;
     font-size: 48px;
     /* line-height: 58px; */
-    padding-bottom: 40px;
+    padding: 0px 0px 40px 24px;
     border-bottom: 2px solid #666666;
 }
 
@@ -85,6 +86,11 @@
     grid-template-columns: 7fr 5fr;
     gap: 32px;
 }
+
+.wrapperLeft {
+    padding-left: 24px;
+}
+
 
 .aboutUsLogo {
     padding-top: 40px;
@@ -117,7 +123,7 @@
     position: relative;
 }
 
-.wrapperRight::before {
+/* .wrapperRight::before {
     content:"";
     position: absolute;
     background-image: url("./../../../images/MainPage/pseudoLine.svg");
@@ -125,7 +131,7 @@
     left: -45px;
     width: 2px;
     height: 422px;
-}
+} */
 
 .wrapperRightImg {
     width: 100%;
@@ -137,7 +143,19 @@
 
 .services {
     padding: 15px 0 45px 0;
+    position: relative;
 }
+
+.services::after {
+    content:"";
+    background-image: url('./../../../images/blur.svg');
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 1012px;
+    height: 466px;
+}
+
 
 .services .container {
     padding: 0 20px;
@@ -155,7 +173,9 @@
     font-size: 48px;
     line-height: 58px;
     margin: 0px 80px 34px 0px;
+    padding-left: 75px;
 }
+
 
 .servicesTitleWrap {
     padding-left: 140px;
@@ -165,6 +185,7 @@
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
 }
+
 .services .item {
     display: flex;
     flex-direction: column;
@@ -186,9 +207,40 @@
     color: #ffffff;
     font-weight: 600;
     font-size: 20px;
+    text-decoration: none;
 }
 
+.services .itemName:hover {
+    color: #959595;
+}
+
+.services .itemName:active {
+    color:#666666;
+}
+
+
 /* feedback */
+
+.feedback {
+    position: relative;
+}
+
+.feedback::after {
+    content:"";
+    background-image: url('./../../../images/blur.svg');
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 805px;
+    height: 466px;
+    transform: translate(70%, -15%);
+}
+
+@media screen and (max-device-width: 1439px) {
+    .feedback::after 
+    {
+        display: none;}
+    }
 
 
 .feedback .container {
@@ -207,12 +259,15 @@
     font-size: 48px;
     line-height: 58px;
     margin: 0px 80px 34px 0px;
+    padding-left: 50px;
 }
 
 .feedback .wrapper {
     padding: 0 90px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+   
 }
 
 .feedback .item {
@@ -222,6 +277,15 @@
     padding: 20px;
     position: relative;
 }
+
+.feedback .itemLogo {
+    width: 342px;
+    height: 322px;
+    background: #25262B;
+    border-radius: 7px; 
+    border: solid rgba(149, 149, 149, 0.46);
+}
+
 
 .feedback .itemName {
     font-family: 'conthraxsemibold';
@@ -236,14 +300,33 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 250px;
 }
+
+/* form */
 
 .feedbackForm {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 130px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #666666;
+    position: relative;
 }
+
+.feedbackForm::after {
+    content:"";
+    background-image: url('./../../../images/blur.svg');
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: 805px;
+    height: 466px;
+    transform: translate(-80%, 72%);
+}
+
+
 
 .formShape {
     width: 936px;
@@ -288,4 +371,141 @@
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
+}
+/* 
+contacts */
+
+.contacts {
+    margin-top: 30px;
+}
+
+.contacts .container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.contactsWrapper {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #666666;
+}
+
+
+
+.socialsTitle {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 25px;
+}
+
+
+.placeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.placeBoxTitle {
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 473px;
+    margin-bottom: 35px;
+}
+
+/* contacts socials */
+
+.socialsContent {
+    display: grid;
+    grid-template-rows:  1fr;
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 0 60px;
+
+}
+.phone {
+    display: flex;
+    margin-top: 100px;
+    gap: 38px;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneTitle {
+    position: relative;
+}
+
+.phoneTitle::after {
+    position: absolute;
+    content: "";
+    right: 120px;
+    top: -18px;
+    height: 69px; 
+    width: 115px;
+    background-image: url('./../../../images/MainPage/phone.svg');
+   
+}
+
+.mail {
+    display: flex;
+    margin-top: 100px;
+    gap: 53px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.mailTitle {
+    position: relative;
+    padding-left: 52px;
+   
+}
+
+.mailTitle::after {
+    position: absolute;
+    content: "";
+    background-image: url('./../../../images/MainPage/letter.svg');
+    display: block;
+    height: 68px; 
+    width: 118px;
+    right: 96px;
+    top: -18px;
+}
+
+.networks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.networksTitle {
+    margin-bottom: 30px;
+}
+
+.networksLogos {
+    display: flex;
+    gap: 20px;
+}
+
+.socialLogo {
+    width: 50px;
 }
