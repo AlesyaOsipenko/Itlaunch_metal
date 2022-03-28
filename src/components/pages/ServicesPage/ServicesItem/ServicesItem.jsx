@@ -1,5 +1,6 @@
 import s from "./ServicesItem.module.css";
 
+
 const ServicesItem = (props) => {
     return (
         <div className={s.servicesItem}>
@@ -13,8 +14,20 @@ const ServicesItem = (props) => {
                 <div className={s.textBox}>
                     <h3 className={s.textBoxTitle}>{props.title}</h3>
                     <p className={s.text}><ServicesItemDesc flag={props.flag}/></p>
-                    <a>Подробнее</a>
+                    
+                    <a className={s.servicesLink} href="/">Подробнее
+                        <svg className={s.linkIcon} xmlns="http://www.w3.org/2000/svg"  width="66" height="23" viewBox="0 0 66 23">
+                            <g fill="none" >
+                                <path d="M65.12 12.5607C65.7058 11.9749 65.7058 11.0251 65.12 10.4393L55.5741 0.893398C54.9883 0.307611 54.0386 0.307611 53.4528 0.893398C52.867 1.47919 52.867 2.42893 53.4528 3.01472L61.9381 11.5L53.4528 19.9853C52.867 20.5711 52.867 21.5208 53.4528 22.1066C54.0386 22.6924 54.9883 22.6924 55.5741 22.1066L65.12 12.5607ZM0.996094 13H64.0594V10H0.996094V13Z" fill="white"/>
+                            </g>
+                        </svg>
+                </a>
+
+
                 </div>
+
+                
+
             </div>
 
           
