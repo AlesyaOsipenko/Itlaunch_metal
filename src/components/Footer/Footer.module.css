@@ -31,8 +31,13 @@
 }
 
 .link:hover {
+    color: #959595;
     border-bottom: 2px solid #FFFFFF;
     transition: 0.1s;
+}
+
+.link:active {
+    color: #666666;
 }
 
 .footerBottom {
