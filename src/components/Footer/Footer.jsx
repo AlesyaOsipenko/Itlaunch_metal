@@ -1,6 +1,6 @@
 import s from './Footer.module.css';
 import logo from './../../images/MainPage/logo.svg';
-
+import { Routes, Route, Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -16,7 +16,7 @@ const Footer = () => {
                     <li className={s.item}><a className={s.link} href="/">Полезная информация</a></li>
             </ul>
             <div className={s.footerBottom}>
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
                 <span className={s.span}>© 2022 METALLOLOM812</span>
             </div>
            </div>

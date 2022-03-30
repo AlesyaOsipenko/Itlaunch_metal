@@ -11,8 +11,6 @@ const ServicesPage = () => {
         <Header/>
         <div className={s.container}>
             <h1 className={s.title}>Услуги</h1>
-        </div>
-        <div className={s.container}>
             <ServicesItem flag="1" image={pic2} title="Вызов металолома"></ServicesItem>
             <ServicesItem flag="2" image={pic2} title="Скупка лома цветных металлов"></ServicesItem>
             <ServicesItem flag="3" image={pic2} title="Демонтаж металлоконструкций"></ServicesItem>

@@ -6,13 +6,21 @@
     min-height: 860px; 
 }
 
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+   
+}
+
 .mainTopContent {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     margin: 274px 0 205px 0;
 }
+
 
 .titleWrap {
     max-width: 985px;
@@ -63,65 +71,48 @@
     padding: 55px 0 45px 0;
 }
 
-.aboutUs .container {
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
 .aboutTitle {
     font-family: 'conthraxsemibold';
     font-style: normal;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 600;
     font-size: 48px;
-    /* line-height: 58px; */
-    padding: 0px 0px 40px 24px;
+    padding-bottom: 40px;
     border-bottom: 2px solid #666666;
 }
 
 .aboutUs .wrapper {
+    padding-top: 35px;
     display: grid;
     grid-template-columns: 7fr 5fr;
-    gap: 32px;
+    gap: 20px;
 }
 
-.wrapperLeft {
-    padding-left: 24px;
-}
-
-
-.aboutUsLogo {
-    padding-top: 40px;
+.aboutUsSubtitle {
+    margin-bottom: 80px;
+    font-family: 'conthraxsemibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #C4C4C4;
 }
 
 .aboutInner {
     display: flex;
-    gap: 38px;
+    flex-direction: column;
+    gap: 70px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 20px;
     color:  #FFFFFF;
 }
 
-.aboutTextLeft {
-    max-width: 326px;
-}
-
-.aboutTextRight {
-    max-width: 399px;
-}
-
-.wrapperRight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 571px;
-    position: relative;
-}
 
 /* .wrapperRight::before {
     content:"";
@@ -134,9 +125,10 @@
 } */
 
 .wrapperRightImg {
-    width: 100%;
+    width: 571px;
+    height: 100%;
     object-fit: cover;
-    padding-top: 40px;
+    
 }
 
 /* services */
@@ -144,23 +136,12 @@
 .services {
     padding: 15px 0 45px 0;
     position: relative;
-}
-
-.services::after {
-    content:"";
+    overflow: hidden;
     background-image: url('./../../../images/blur.svg');
-    position: absolute;
-    left: 0px;
-    top: 0;
-    width: 1012px;
-    height: 466px;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
 }
 
-
-.services .container {
-    padding: 0 20px;
-    margin: 0 auto;
-}
 
 .servicesTitle {
     font-family: 'conthraxsemibold';
@@ -223,30 +204,9 @@
 
 .feedback {
     position: relative;
+    overflow: hidden;
 }
 
-.feedback::after {
-    content:"";
-    background-image: url('./../../../images/blur.svg');
-    position: absolute;
-    left: 0px;
-    top: 0;
-    width: 805px;
-    height: 466px;
-    transform: translate(70%, -15%);
-}
-
-@media screen and (max-device-width: 1439px) {
-    .feedback::after 
-    {
-        display: none;}
-    }
-
-
-.feedback .container {
-    padding: 0 20px;
-    margin: 0 auto;
-}
 
 .feedbackTitle {
     font-family: 'conthraxsemibold';
@@ -258,23 +218,19 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 58px;
-    margin: 0px 80px 34px 0px;
-    padding-left: 50px;
+    margin-bottom: 90px;
+    
 }
 
 .feedback .wrapper {
-    padding: 0 90px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-   
 }
 
 .feedback .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     position: relative;
 }
 
@@ -314,18 +270,6 @@
     border-bottom: 2px solid #666666;
     position: relative;
 }
-
-.feedbackForm::after {
-    content:"";
-    background-image: url('./../../../images/blur.svg');
-    position: absolute;
-    left: 300px;
-    top: 0;
-    width: 805px;
-    height: 466px;
-    transform: translate(-80%, 72%);
-}
-
 
 
 .formShape {
@@ -379,10 +323,6 @@ contacts */
     margin-top: 30px;
 }
 
-.contacts .container {
-    padding: 0 20px;
-    margin: 0 auto;
-}
 
 .contactsWrapper {
     display: grid;
@@ -391,15 +331,12 @@ contacts */
     border-bottom: 2px solid #666666;
 }
 
-
-
 .socialsTitle {
     font-family: 'conthraxsemibold';
     font-style: normal;
     font-size: 36px;
     line-height: 43px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
     padding-top: 25px;
@@ -426,6 +363,11 @@ contacts */
     margin-bottom: 35px;
 }
 
+ .mapBox {
+    width: 100%;
+    height: 100%;
+} 
+
 /* contacts socials */
 
 .socialsContent {
@@ -436,25 +378,24 @@ contacts */
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    padding: 0 60px;
 
 }
 .phone {
     display: flex;
-    margin-top: 100px;
-    gap: 38px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 93px;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .phoneTitle {
     position: relative;
+    padding-left: 40px;
 }
 
 .phoneTitle::after {
     position: absolute;
     content: "";
-    right: 120px;
+    left: -46px;
     top: -18px;
     height: 69px; 
     width: 115px;
@@ -464,17 +405,16 @@ contacts */
 
 .mail {
     display: flex;
-    margin-top: 100px;
-    gap: 53px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 55px;
+    gap: 27px;
+    flex-direction: column;
     position: relative;
     
 }
 
 .mailTitle {
     position: relative;
-    padding-left: 52px;
+    padding-left: 65px;
    
 }
 
@@ -485,7 +425,7 @@ contacts */
     display: block;
     height: 68px; 
     width: 118px;
-    right: 96px;
+    left: -39px;
     top: -18px;
 }
 
@@ -493,8 +433,7 @@ contacts */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .networksTitle {

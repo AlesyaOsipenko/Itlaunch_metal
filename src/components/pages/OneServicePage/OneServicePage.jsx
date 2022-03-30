@@ -20,9 +20,7 @@ const OneServicePage = () => {
                     <button className={s.oneServicePagebtn}>
                         Смотреть полный прайс
                     </button>
-
                 </div>
-
             </div>
 
             <div className={s.pricePage}>
@@ -142,21 +140,26 @@ const OneServicePage = () => {
                     </div>
 
                     <div className={s.materialsTypes}>
+
                         <div className={s.materialsTypesGroupOne}>
-                            <div className={s.materialsTypesItem}>МИКС (металлоконструкции, металлическая стружка, станки)	</div>
-                            <div className={s.materialsTypesItem}>Стальной металл кусковой</div>
-                            <div className={s.materialsTypesItem}>Негабаритный металлолом</div>
-                            <div className={s.materialsTypesItem}>Стружка чёрных металлов</div>
-                            <div className={s.materialsTypesItem}>Лом промышленного чугуна, сантехнические элементы</div>
-                            <div className={s.materialsTypesItem}>Оцинковка и оцинкованные листы</div>
+                            <div className={s.materialsTypesSubtitle}><span className={s.subtitleFirst}>Черный лом</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>МИКС (металлоконструкции, металлическая стружка, станки)	</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Стальной металл кусковой</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Негабаритный металлолом</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Стружка чёрных металлов</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Лом промышленного чугуна, сантехнические элементы</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Оцинковка и оцинкованные листы</span></div>
                         </div>
+
+
                         <div className={s.materialsTypesGroupTwo}>
-                            <div className={s.materialsTypesItem}>Медь</div>
-                            <div className={s.materialsTypesItem}>Алюминий</div>
-                            <div className={s.materialsTypesItem}>Свинец</div>
-                            <div className={s.materialsTypesItem}>Латунь</div>
-                            <div className={s.materialsTypesItem}>Нержавейка</div>
-                            <div className={s.materialsTypesItem}>Блеск (очищенный кабель), электротехнический кабель</div>
+                            <div className={s.materialsTypesSubtitle}><span className={s.subtitleSecond}>лом цветных <br /> металлов</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Медь</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Алюминий</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Свинец</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Латунь</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Нержавейка</span></div>
+                            <div className={s.materialsTypesItem}><span className={s.materialsTypesTitle}>Блеск (очищенный кабель), электротехнический кабель</span></div>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const MainTop = () => {
             <Header></Header>
 
             <div className={s.mainTopContent}>
-                <div className={s.wrapper}>
+                <div className={s.container}>
                     <div className={s.titleWrap}>
                         <h1 className={s.title}>Покупаем лом черных и цветных металлов по высоким ценам</h1>
                     </div>

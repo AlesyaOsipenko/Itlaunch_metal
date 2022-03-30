@@ -5,16 +5,21 @@ import Services from "./Services/Services";
 import Feedback from "./Feedback/Feedback";
 import Contacts from "./Contacts/Contacts";
 import Footer from "../../Footer/Footer";
+import s from './MainPage.module.css'
 
 const MainPage = () => {
     return (
         <>
-        <MainTop/>
-        <AboutUs/>
-        <Services/>
-        <Feedback/>
-        <Contacts/>
-        <Footer/>
+        
+            <MainTop/>
+            <div className={s.container}>
+            <AboutUs/>
+            <Services/>
+            <Feedback/>
+            <Contacts/>
+            <Footer/>
+            </div>
+        
         </>
     );
 }

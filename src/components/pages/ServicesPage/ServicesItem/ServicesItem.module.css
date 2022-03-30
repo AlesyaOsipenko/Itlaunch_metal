@@ -1,11 +1,25 @@
 .servicesItem {
     display: flex;
     gap: 233px;
+    padding: 50px 0px;
     border-bottom: 2px solid #666666;
 }
+
+.servicesItem:first-of-type {
+    background-image: url('./../../../../images/blur.svg');
+    background-repeat: no-repeat;
+    background-position-y: -50px ;
+}
+
+.servicesItem:nth-of-type(4) {
+    background-image: url('./../../../../images/blur.svg');
+    background-repeat: no-repeat;
+    background-position-x: 355px ;
+}
+
 .servicesItem .container {
     width: 100%;
-    padding: 50px 105px;
+    
     display: flex;
     gap: 230px;
 }
@@ -58,17 +72,6 @@
     gap: 20px;
     max-width: 510px;
     position: relative;
-}
-
-.textBoxDescOne::after {
-    content: "";
-    position: absolute;
-    background-image: url('./../../../../images/blur.svg');
-    right: 130px;
-    top: 0;
-    width: 805px;
-    transform: translate(-10%, -15%);
-    height: 466px;
 }
 
 .textBoxDescThree {

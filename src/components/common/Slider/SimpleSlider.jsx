@@ -10,7 +10,8 @@ import 'swiper/css/scrollbar';
 import slider1 from './../../../images/OneServicePage/slider1.png'
 
 export default () => {
-  return (
+  return ( <>
+  
     <Swiper
     //   modules={[Navigation, Pagination, Scrollbar, A11y]}
     //   spaceBetween={50}
@@ -20,7 +21,7 @@ export default () => {
     //   scrollbar={{ draggable: true }}
     //   onSwiper={(swiper) => console.log(swiper)}
     //   onSlideChange={() => console.log('slide change')}
-        slidesPerView={1.8}
+        slidesPerView={2}
         initialSlide={1}
         centeredSlides={true}
         watchOverflow={true}
@@ -36,11 +37,15 @@ export default () => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        
+
+        
     >
       <SwiperSlide><img className={s.sliderImg} src={slider1} alt="" /></SwiperSlide>
       <SwiperSlide><img className={s.sliderImg} src={slider1} alt="" /></SwiperSlide>
       <SwiperSlide><img className={s.sliderImg} src={slider1} alt="" /></SwiperSlide>
 
     </Swiper>
+    </>
   );
 };

@@ -6,7 +6,6 @@ const ServicesItem = (props) => {
         <div className={s.servicesItem}>
             <div className={s.container}>
                 <div className={s.imgBox}>
-                    {/* <img className={s.img} src={props.image} alt="" /> */}
                     <div className={s.img}></div>`
                 </div>
 

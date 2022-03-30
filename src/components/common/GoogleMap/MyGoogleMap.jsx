@@ -1,6 +1,6 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api'
-import s from './MyGoogleMap.module.css'
+// import s from './MyGoogleMap.module.css'
 
 const center = {
   lat: 59.91134010347736,
@@ -26,7 +26,7 @@ const MyGoogleMap = () => {
   }, [])
 
 
-  return <div className={s.map}>
+  return <div>
     {isLoaded ? (
     <GoogleMap
       mapContainerStyle={{ width: '100%', height: '100%' }}
