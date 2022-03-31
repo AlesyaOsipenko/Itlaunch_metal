@@ -1,4 +1,5 @@
-import SimpleSlider from "../../common/Slider/SimpleSlider";
+// import SimpleSlider from "../../common/Slider/SimpleSlider";
+import SimpleSlider from "../../common/SlickSlider/SlickSlider";
 import Header from "../../Header/Header";
 import s from './../OneServicePage/OneServicePage.module.css'
 

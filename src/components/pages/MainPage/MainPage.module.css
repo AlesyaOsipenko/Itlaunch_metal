@@ -8,7 +8,6 @@
 
 .container {
     max-width: 1140px;
-    padding: 0 15px;
     margin: 0 auto;
     width: 100%;
    
@@ -69,6 +68,7 @@
 
 .aboutUs {
     padding: 55px 0 45px 0;
+    border-bottom: 2px solid #666666;
 }
 
 .aboutTitle {
@@ -153,8 +153,8 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 58px;
-    margin: 0px 80px 34px 0px;
-    padding-left: 75px;
+    padding-bottom: 34px;
+    border-bottom: 2px solid #666666;
 }
 
 
@@ -172,6 +172,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    border-bottom: 2px solid #666666
 }
 
 .services .itemLogo {

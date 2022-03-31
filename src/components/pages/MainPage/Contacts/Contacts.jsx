@@ -1,4 +1,4 @@
-import MyGoogleMap from '../../../common/GoogleMap/MyGoogleMap';
+
 import s from './../MainPage.module.css';
 import vk from './../../../../images/MainPage/vk.png';
 import inst from './../../../../images/MainPage/instagram.png';
@@ -49,13 +49,13 @@ const Contacts = () => {
 
                             <YMaps>
                                 <Map
-                                    defaultState={{ center: [55.75, 37.57], zoom: 10 }}
+                                    defaultState={{ center: [59.93428, 30.3351], zoom: 10 }}
                                     onLoad={ymaps => ymaps.load()}
                                     mapContainerStyle={{ width: '100%', height: '100%' }}
                                     width="100%"
                                     height="100%"
                                 >
-                                    <Placemark geometry={[55.75, 37.57]} />
+                                    <Placemark geometry={[59.93428, 30.3351]} />
                                     <GeoObject />
                                 </Map>
 
